@@ -2,5 +2,5 @@
 
 version=development
 
-docker build -t anmoldeepkaur/busapp:${version} .
+DOCKER_BUILDKIT=1 docker build -t anmoldeepkaur/busapp:${version} .
 docker push anmoldeepkaur/busapp:${version}
